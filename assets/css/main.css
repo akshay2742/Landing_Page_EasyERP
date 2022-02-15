@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+html, body{
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+.flex_row{
+    display: flex;
+    flex-direction: row;
+}
+.flex_column{
+    display: flex;
+    flex-direction: column;
+}
+#landing_page{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(32deg, rgba(2,0,36,1) 0%, rgba(70,69,64,0.52) 40%, rgba(70,69,64,0.52) 45%, rgba(0,212,255,0.73) 100%),url("../Images/ANOTHER\ DMS\ BANNER.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/*NavigationBar*/
+#SideNav{
+    display: none;
+}
+.navigation_bar{
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 5px 5px rgb(0,0,0,0.2);
+    height: 100px;
+    z-index: 9;
+}
+.navbar_logo img{
+    width: 100px;
+    
+}
+.navbar_links{
+    margin-left: auto;
+    width: 40%;
+}
+.navbar_links div{
+    width: 100%;
+    height: 100%;
+}
+.navbar_links div a p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 30%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mobile_button{
+    display: none;
+}
+
+/* navbar-text-animation */
+.hover-underline-animation {
+    position: relative;
+    color: #fff;
+  }
+  
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/**/
+
+/**/
+
+/*Landing Page Content*/
+.landing_page_content{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.heading{
+    margin: 0 auto;
+}
+.heading h1{
+    font-size: 80px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    animation: fadeInDown 1s;
+}
+
+.heading p{
+    color: aqua;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Dancing Script', sans-serif;
+    text-align: center;
+    animation: fadeInDown 1s;
+}
+.button_container{
+    display: flex;
+    flex-direction: row;
+}
+.button_container a{
+    margin: 0 auto;
+}
+.button{
+    background: aqua;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/**/
+
+/*About Area*/
+#about{
+    padding: 50px;
+}
+.section_heading{
+    width: 100%;
+    padding-bottom: 50px;
+}
+.section_heading::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 6px;
+    background: #010488e6;
+    margin: 0 auto;
+}
+.section_heading h1{
+    font-size: 50px;
+    color: #191b38;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    animation: fadeInDown 1s;
+    letter-spacing: 1px;
+}
+.section_heading_white{
+    width: 100%;
+    padding-bottom: 50px;
+}
+.section_heading_white::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 6px;
+    background: #010488e6;
+    margin: 0 auto;
+}
+.section_heading_white h1{
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    animation: fadeInDown 1s;
+    letter-spacing: 1px;
+}
+.about_box{
+    display: flex;
+    flex-direction: row;
+}
+.about_content{
+    width: 50%;
+}
+.about_image{
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.about_image img{
+    width: 100%;
+}
+.about_content p{
+    font-size: 22px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgb(0,0,0,0.2);
+}
+.highlight_text{
+    float: left;
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: -4px;
+    margin-right: 10px;
+    line-height: 1;
+    font-family: 'Poppins', sans-serif;
+}
+.read_button{
+    background: aqua;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    border: #010488e6 solid 1px;
+}
+.button_container_read{
+    display: flex;
+    flex-direction: row;
+}
+.read_button:hover{
+    background: #fff;
+    color: #000;
+    border: #010488e6 solid 1px;
+    transition: .5s;
+}
+.button_container_read a{
+    margin: 0 auto;
+}
+.popup{
+    display: none;
+    position: fixed;
+    padding-top: 30px; 
+    left: 8%;
+    top: 20%;
+    width: 85%; 
+    height: 65%;
+    overflow: auto;
+    background: #fff;
+    z-index: 9;
+    border: #fff solid 1px;
+    border-radius: 10px;
+}
+.popup_details{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+.popup_content{
+    width: 70%;
+}
+.popup_image{
+    width: 30%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.popup_image img{
+    width: 100%;
+}
+.popup_content p{
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px 4px rgb(0,0,0,0.2);
+}
+
+/* Partners Section */
+#partners{
+    padding: 50px;
+    background-image: linear-gradient(32deg, rgba(2,0,36,1) 0%, rgba(70,69,64,0.52) 40%, rgba(70,69,64,0.52) 45%, rgba(0,212,255,0.73) 100%),url("../Images/ANOTHER\ DMS\ BANNER.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.slider_image{
+    width: 100%;
+    height: 100%;
+}
+.slider_image img{
+    width: 100%;
+}
+#footer_form{
+    padding: 50px;
+}
+.form_design{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.contact{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.phone{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+.phone i{
+    font-size: 100px;
+    margin: 0 auto;
+    color: aqua;
+}
+.phone p{
+    font-size: 20px;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    color: #010488e6;
+}
+.phone h3{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    color: #010488e6;
+}
+.email{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.email i{
+    font-size: 100px;
+    margin: 0 auto;
+    color: aqua;
+}
+.email p{
+    font-size: 20px;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    color: #010488e6;
+}
+.email h3{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    color: #010488e6;
+}
+.inputs{
+    padding: 20px;
+    width: 50%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.form_design input{
+    margin: auto;
+    width: 80%;
+    background: #fff;
+    color: #000;
+    border: gray solid 1px;  
+    height: 50px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.message{
+    margin: auto;
+    width: 80%;
+    background: #fff;
+    color: #000;
+    border: gray solid 1px;  
+    border-radius: 10px;
+    height: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+.send{
+    margin: 0 auto;
+    width: 100px;
+    height: 50px;
+    background: aqua;
+    border: none;
+    border-radius: 20px;
+}
+#copyright{
+    padding: 50px;
+}
+.copyright p{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #010488e6;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    /*MobileNav*/
+    .navbar_links{
+        display: none;
+    }
+    .mobile_button{
+        display: block;
+        margin-left: auto;
+    }
+    .mobile_button a{
+        position: relative;
+        top: 30%;
+        font-size: 20px;
+        color: white;
+    }
+    #SideNav div{
+        height: 50px;
+    }
+    .icon{
+        float: right;
+    }
+    #SideNav{
+        display: block;
+    }
+    #SideNav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: aqua;
+        overflow-x: hidden;
+        transition: all 0.5s ease 0s;
+    }
+      
+    #SideNav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #fff;
+        display: block;
+        transition: 0.3s;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+    }
+      
+    #SideNav a:hover {
+        color: #f1f1f1;
+    }
+    /**/  
+
+    /* Landing Page Content */
+    .heading h1{
+        font-size: 50px;
+    }
+    .heading p{
+        font-size: 20px;
+    }
+    /**/
+    .about_box{
+        display: flex;
+        flex-direction: column;
+    }
+    .about_content{
+        width: 100%;
+    }
+    .about_image{
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-bottom: 20px;
+    }
+    .about_image img{
+        width: 100%;
+    }
+    .about_content p{
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        text-shadow: 2px 2px 4px rgb(0,0,0,0.2);
+    }
+    .button_container_about{
+        margin: 0 auto;
+    }
+    .popup_details{
+        display: flex;
+        flex-direction: column;
+    }
+    .popup_content{
+        width: 100%;
+    }
+    .popup_image{
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-bottom: 20px;
+    }
+    .popup_image img{
+        width: 100%;
+    }
+    .form_design{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact{
+        width: 100%;
+    }
+    .inputs{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+    
