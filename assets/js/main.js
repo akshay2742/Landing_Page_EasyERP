@@ -1,3 +1,4 @@
+// To Open and Close of SideNav
 function OpenNav() {
     if(screen.width <= 768){
         document.getElementById("SideNav").style.width = "250px";
@@ -8,7 +9,7 @@ function CloseNav() {
         document.getElementById("SideNav").style.width = "0px";
     }
 }
-
+//Setting fixed navbar color after scrolling
 window.onscroll = () => {
     let a = document.querySelector('.navigation_bar')
     if(window.scrollY > 300){
@@ -21,6 +22,7 @@ window.onscroll = () => {
     }
 }
 
+//Setting Opacity and display of PopUp
 OpenPopup = () => {
     document.querySelector('.popup').style.display = 'block';
     document.querySelector('.popup').style.animation = 'bounceInLeft 1s';

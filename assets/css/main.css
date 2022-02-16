@@ -26,6 +26,7 @@ a{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 /*NavigationBar*/
 #SideNav{
     display: none;
@@ -272,6 +273,8 @@ a{
     font-weight: 400;
     text-shadow: 2px 2px 4px rgb(0,0,0,0.2);
 }
+/**/
+
 
 /* Partners Section */
 #partners{
@@ -289,6 +292,9 @@ a{
 .slider_image img{
     width: 100%;
 }
+/**/
+
+/*Contact Section*/
 #footer_form{
     padding: 50px;
 }
@@ -380,6 +386,8 @@ a{
     border: none;
     border-radius: 20px;
 }
+/**/
+
 #copyright{
     padding: 50px;
 }
