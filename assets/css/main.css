@@ -69,7 +69,7 @@ a{
     color: #fff;
   }
   
-.hover-underline-animation:after {
+.hover-underline-animation::after {
     content: '';
     position: absolute;
     width: 100%;

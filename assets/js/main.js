@@ -24,8 +24,19 @@ window.onscroll = () => {
 OpenPopup = () => {
     document.querySelector('.popup').style.display = 'block';
     document.querySelector('.popup').style.animation = 'bounceInLeft 1s';
+    document.querySelector('.popup').style.opacity = '1 !important';
+    document.querySelector('.popup').style.zIndex = '9999';
+    document.querySelector('#landing_page').style.opacity = '0.5';
+    document.querySelector('#partners').style.opacity = '0.5';
+    document.querySelector('#footer_form').style.opacity = '0.5';
+    document.querySelector('.copyright').style.opacity = '0.5';
+
 }
 ClosePopup = () => {
     document.querySelector('.popup').style.display = 'none';
     document.querySelector('.popup').style.animation = 'bounceOutLeft 1s';
+    document.querySelector('#landing_page').style.opacity = '1';
+    document.querySelector('#partners').style.opacity = '1';
+    document.querySelector('#footer_form').style.opacity = '1';
+    document.querySelector('.copyright').style.opacity = '1';
 }
